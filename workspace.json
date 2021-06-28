@@ -1,9 +1,26 @@
 {
-  
-  
   "version": 2,
-  
-  "projects": {},
+  "projects": {
+    "asafarim-site": {
+      "projectType": "application",
+      "root": "apps/asafarim-site",
+      "sourceRoot": "apps/asafarim-site/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/docusaurus:browser",
+          "options": {
+            "outputPath": "dist/apps/asafarim-site"
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/docusaurus:dev-server",
+          "options": {
+            "port": 3000
+          }
+        }
+      }
+    }
+  },
   "cli": {
     "defaultCollection": "@nrwl/workspace"
   }
