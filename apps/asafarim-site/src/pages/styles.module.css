@@ -1,11 +1,16 @@
 /* stylelint-disable docusaurus/copyright-header */
+
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Architects+Daughter&family=Cabin+Sketch:wght@700&family=Carter+One&family=Chewy&family=Concert+One&family=Fugaz+One&family=Gloria+Hallelujah&family=Kaushan+Script&family=Knewave&family=Londrina+Solid:wght@900&family=Pacifico&family=Permanent+Marker&family=Skranji:wght@700&display=swap');
+
 /**
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 0.5rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -13,7 +18,7 @@
 
 @media screen and (max-width: 966px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 1rem;
   }
 }
 
@@ -21,6 +26,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  place-content: center;
+}
+
+.section {
+  margin: 10rem;
 }
 
 .features {
@@ -33,4 +50,58 @@
 .featureImage {
   height: 200px;
   width: 200px;
+}
+
+.buttonTopics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buttonTopics span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonTopics span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonTopics:hover span {
+  padding-right: 25px;
+}
+
+.buttonTopics:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
 }

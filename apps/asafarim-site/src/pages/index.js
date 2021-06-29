@@ -5,35 +5,34 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import '../css/custom.css';
 
 const features = [
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: 'Content Headlines',
+    imageUrl: '/img/coding.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        <a href="/docs/intro">Topics</a> section is where the main concepts and codes are presented. 
       </>
     ),
   },
   {
     title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    imageUrl: '/img/wm.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Blog section lets you focus on the goals and the route to gain progress in coding area.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: 'Build with your own hands',
+    imageUrl: '/img/didit.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        “You don’t learn to walk by following rules. You learn by doing, and by falling over.”
+        —Richard Branson
       </>
     ),
   },
@@ -59,7 +58,7 @@ function Home() {
   const { siteConfig = {} } = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
@@ -74,7 +73,7 @@ function Home() {
               )}
               to={useBaseUrl('docs/')}
             >
-              Get Started
+              Headlines
             </Link>
           </div>
         </div>
