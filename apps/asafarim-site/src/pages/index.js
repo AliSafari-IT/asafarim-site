@@ -15,7 +15,7 @@ const features = [
     imageUrl: '/img/coding.svg',
     description: (
       <>
-        <a href="/docs/intro">Topics</a> section is where the main concepts and codes are presented.
+        <a href="/docs/index">Topics</a> section is where the main concepts and codes are presented.
       </>
     ),
   },
@@ -75,7 +75,7 @@ function Home() {
                   'button button--outline button--secondary button--lg',
                   styles.getStarted
                 )}
-                to={useBaseUrl('docs/')}
+                to={useBaseUrl('docs/index')}
               >
                 Headlines
               </Link>

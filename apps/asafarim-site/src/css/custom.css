@@ -11,7 +11,7 @@
  
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary: #069b55; /* #25c2a0 */
   --ifm-color-primary-dark: rgb(33, 175, 144);
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -20,18 +20,12 @@
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
 }
-
+ 
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
-}
-
-
-svg path {
-  color: #6195f5;
-  fill: currentcolor;
 }
 
 .containerdouglas {
@@ -72,4 +66,39 @@ svg path {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+.learn-more {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+figure {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+figcaption {
+  text-align: center;
+  color: var(--ifm-menu-color);
+}
+
+figcaption::before {
+  content: '🔎';
+}
+
+footer .footer__link-item {
+  opacity: .5;
+  text-decoration: none;
+  transition: opacity 0.2s linear;
+  font-family: Sen, var(--ifm-font-family-base);
+  font-weight: 600;
+}
+
+footer .container .text {
+  color: rgb(229, 243, 32);
+  font-weight: 700;
 }
