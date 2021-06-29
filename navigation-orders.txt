@@ -1,0 +1,28 @@
+Order       Alphabet    position:folder
+1000        A           1050:
+2000        B
+3000        C
+4000        D           4050: design-patterns;
+5000        E
+6000        F
+7000        G           7500: git; 
+8000        H
+9000        I
+10000       J           10500: json; 
+11000       K
+12000       L
+13000       M
+14000       N           14500: nx-workspace; 
+15000       O
+16000       P
+17000       Q
+18000       R           18500: react; 
+19000       S           19500: ssg; 19550: syncfusion; 
+20000       T
+21000       U           21500: uml;
+22000       V
+23000       W
+24000       X
+25000       Y
+26000       Z
+30000       END         35000: glossary; 

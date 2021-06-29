@@ -73,6 +73,10 @@ module.exports = {
               label: 'GitHub 📚',
               href: 'https://github.com/AliSafari-IT/asafarim-site',
             },
+            {
+              label: 'Buy me a coffee ',
+              href: 'https://github.com/AliSafari-IT/asafarim-site',
+            },
           ],
         },
       ],

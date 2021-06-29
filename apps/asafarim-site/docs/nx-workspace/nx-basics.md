@@ -20,3 +20,6 @@ Answer the questions like:
 - *<span style={{ padding: '3px', backgroundColor: 'tomato' }}>What to create in the new workspace ...</span>*: choose the type of application you want to create.,
 
 ![nx workspaces](/img/nx-workspace-type.png)
+
+- adding the stylesheet and that's it.
+
