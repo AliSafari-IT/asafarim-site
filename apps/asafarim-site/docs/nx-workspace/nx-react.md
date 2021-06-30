@@ -10,7 +10,7 @@ By running the following command in your Terminal or Command prompt:
 ```bash title="Create nx workspace"
 npx create-nx-workspace --preset=react
 ```
-## Create an application
+### Create a React application
 ```bash title="Create react app: this command creates a new React app named todos"
 nx generate application todos
 ```
@@ -20,8 +20,40 @@ Running the generate command above will add two projects to your workspace:
 - E2E tests for the React application
 
 ![React Apps](/img/react-app-folders.png)
-## Serve application
+### Serve application
 Now that the application is set up, you can run it locally via:
 ```bash
 npx nx serve todos
 ```
+----
+## Add React capabilities to an existing Nx workspace
+If you have already an existing Nx workspace that was not preset with React or it is an empty workspace, then you can add React capability to the workspace by running the command below:
+```bash
+yarn add @nrwl/react
+```
+### Generate a React application
+```bash title="Command to create a React app called frontend"
+nx g @nrwl/react:app frontend
+```
+The *frontend* project is a full React app scaffolded with `main.tsx`, an *entrypoint* file:
+
+```tsx title="apps>frontend>src>main.tsx"
+import { StrictMode } from 'react';
+import * as ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+
+import App from './app/app';
+
+ReactDOM.render(
+  <StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </StrictMode>,
+  document.getElementById('root')
+);
+```
+
+By the way, if you look in the `frontend-e2e` folder, you’ll see the *Cypress* project with the traditional structure of any **Cypress test suite**:
+
+![Cypress test suite structure](/img/frontend-e2e.png)
