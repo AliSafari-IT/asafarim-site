@@ -17,7 +17,7 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/index', 
+          to: 'docs/index',
           activeBasePath: 'docs',
           label: 'Topics',
           position: 'left',
@@ -42,6 +42,15 @@ module.exports = {
             {
               label: 'All Topics',
               to: 'docs/index',
+            }, {
+              label: 'End-User License Agreement',
+              to: '/eula',
+            }, {
+              label: 'Cookies policy',
+              to: '/cookies_en',
+            }, {
+              label: 'Website disclaimer',
+              to: '/disclaimers',
             },
           ],
         },
@@ -74,8 +83,8 @@ module.exports = {
               href: 'https://github.com/AliSafari-IT/asafarim-site',
             },
             {
-              label: 'Buy me a coffee ',
-              href: 'https://github.com/AliSafari-IT/asafarim-site',
+              label: 'Buy me a coffee ☕',
+              href: 'https://www.buymeacoffee.com/asafarim',
             },
           ],
         },
@@ -84,9 +93,9 @@ module.exports = {
       Learning is an experience, everything else is just information. (Albert Einstein)`,
     },
     googleAnalytics: {
-        trackingID: 'G-5C5QXFF5ZX',
-        // Optional fields.
-        anonymizeIP: true, // Should IPs be anonymized?
+      trackingID: 'G-5C5QXFF5ZX',
+      // Optional fields.
+      anonymizeIP: true, // Should IPs be anonymized?
     },
   },
   presets: [
@@ -112,7 +121,7 @@ module.exports = {
     ],
   ],
   stylesheets: [
-      'https://fonts.googleapis.com/css?family=Sen|Source+Code+Pro',
-      'https://at-ui.github.io/feather-font/css/iconfont.css'
+    'https://fonts.googleapis.com/css?family=Sen|Source+Code+Pro',
+    'https://at-ui.github.io/feather-font/css/iconfont.css'
   ],
 };
