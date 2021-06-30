@@ -21,6 +21,9 @@
   "projects": {
     "asafarim-site": {
       "tags": []
+    },
+    "hooks": {
+      "tags": []
     }
   }
 }
