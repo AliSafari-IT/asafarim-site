@@ -1,7 +1,8 @@
----
-sidebar_position: 2
----
 # Nx and React
+
+import { Figure } from './figure';
+import './styles.css';
+
 
 Nx is a smart and extensible build framework to help you develop, test, build, and scale with React and React frameworks like Gatsby, Next.js, Docusaurus, ... and React Native.
 
@@ -18,8 +19,8 @@ Running the generate command above will add two projects to your workspace:
 
 - A React application
 - E2E tests for the React application
+<Figure data="/img/react-app-folders.png" caption="React App and its test suite Cypress project" />
 
-![React Apps](/img/react-app-folders.png)
 ### Serve application
 Now that the application is set up, you can run it locally via:
 ```bash
@@ -27,7 +28,7 @@ npx nx serve todos
 ```
 ----
 ## Add React capabilities to an existing Nx workspace
-If you have already an existing Nx workspace that was not preset with React or it is an empty workspace, then you can add React capability to the workspace by running the command below:
+If you have already an existing Nx workspace that was not preset with React or it is an empty workspace, then you can add React capability (the React core plugin) to the workspace by running the command below :
 ```bash
 yarn add @nrwl/react
 ```
@@ -55,5 +56,5 @@ ReactDOM.render(
 ```
 
 By the way, if you look in the `frontend-e2e` folder, you’ll see the *Cypress* project with the traditional structure of any **Cypress test suite**:
+<Figure data="/img/frontend-e2e.png" caption="Cypress test suite structure" />
 
-![Cypress test suite structure](/img/frontend-e2e.png)
