@@ -8,17 +8,17 @@ Order       Alphabet    position:folder
 7000        G           7500: git; 
 8000        H
 9000        I
-10000       J           10500: json; 
+10000       J           10500: json; 10550: JavaScript;
 11000       K
 12000       L
-13000       M
-14000       N           14500: nx-workspace; 
+13000       M           13500: Microsoft Fluent; 
+14000       N           14500: nx Build Framework; 
 15000       O
 16000       P
 17000       Q
 18000       R           18500: react; 
 19000       S           19500: ssg; 19550: syncfusion; 
-20000       T
+20000       T           20500: typescript; 
 21000       U           21500: uml;
 22000       V
 23000       W

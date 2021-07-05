@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1350 
+sidebar_position: 13050 
 title: "MIME/Media/Content Type"
 slug: "../content-type-mime"
 ---
