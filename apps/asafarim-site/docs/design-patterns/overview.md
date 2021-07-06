@@ -15,8 +15,8 @@ The catalog of Gang-of-Four (the same refernce as mentioned above) classifies th
 <th>Creational patterns</th>   <th>Structural patterns</th>   <th>Behavioral patterns</th>
 </tr>
 <tr>
-<td>Increase flexibility and reuse of existing code by providing various object creation mechanism</td>  
-<td>Explain how to assemble objects and classes into larger structures while keeping these structures flexible and efficient.</td>   
-<td>These patterns are concerned with algorithms and the assignment of responsibilities between objects.</td>   
+<td>These patterns can be either class-creation patterns or object-creational patterns. Increase flexibility and reuse of existing code by providing various object creation mechanism</td>  
+<td>These patterns are designed with regard to a class's structure and composition. Explain how to assemble objects and classes into larger structures while keeping these structures flexible and efficient.</td>   
+<td>These patterns are designed depending on how one class communicates with others. These patterns are concerned with algorithms and the assignment of responsibilities between objects.</td>   
 </tr>
 </table>
