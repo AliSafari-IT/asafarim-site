@@ -5,7 +5,10 @@ title: "Overview"
 
 ## What’s a design pattern?
 
-Design patterns are sort of blueprints that by customization you can solve a recurring design problem. [[Read More](https://refactoring.guru/design-patterns/book)]
+Design patterns are sort of blueprints that by customization you can solve a recurring design problem. 
+
+<a className="rm-a" href="https://refactoring.guru/design-patterns/book">Read More</a>
+<br />
 
 ## Catalog of design patterns
 

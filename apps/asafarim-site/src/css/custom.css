@@ -8,7 +8,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Architects+Daughter&family=Cabin+Sketch:wght@700&family=Carter+One&family=Chewy&family=Concert+One&family=Fugaz+One&family=Gloria+Hallelujah&family=Kaushan+Script&family=Knewave&family=Londrina+Solid:wght@900&family=Pacifico&family=Permanent+Marker&family=Skranji:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:wght@900,400,300&display=swap');
 
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #069b55; /* #25c2a0 */
@@ -117,4 +119,40 @@ footer .container .text {
 .div-font-larger {
   font-size: larger;
   font-weight: 900;
+}
+
+/* Read More buttons */
+.rm-a {
+  line-height:3em;
+  letter-spacing:0.06em;
+  font-family: 'Lato', sans-serif;
+  font-weight:normal;
+  font-size:14px;
+  text-decoration:none;
+  color:#19ec19;
+  background:#231f20;
+  display:inline-block;
+  transition:background 200ms;
+  border-radius:4px;
+  width: 100%;
+  text-align: center;
+}
+.rm-a:hover {
+  background:#c7e447;
+  color:#774c57;
+}
+.rm-a:after {
+  font-family: 'FontAwesome', sans-serif;
+  font-weight:300;
+  content: "\f105";
+  margin-left:20px;
+  color:#fcd62e;
+  font-size:18px;
+  vertical-align:middle;
+  transition:color 200ms;
+}
+
+.rm-a:hover:after {
+  color:#044404;
+  padding-right: 5px;
 }

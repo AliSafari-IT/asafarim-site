@@ -4,7 +4,7 @@ Order       Alphabet    position:folder
 3000        C
 4000        D           4050: design-patterns;
 5000        E
-6000        F
+6000        F           6050: fluent-ui; 
 7000        G           7500: git; 
 8000        H
 9000        I
@@ -21,7 +21,7 @@ Order       Alphabet    position:folder
 20000       T           20500: typescript; 20400: Test-Driven Development;
 21000       U           21500: uml;
 22000       V
-23000       W
+23000       W           23500: Web Accessibility;
 24000       X
 25000       Y
 26000       Z

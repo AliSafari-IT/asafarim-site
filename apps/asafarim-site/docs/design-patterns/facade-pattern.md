@@ -8,13 +8,10 @@ Just like its name, facade, implies it is like the front of a building hides all
 
 For instance, an app that uploads short funny videos with cats to social media could potentially use a professional video conversion library. However, all that it really needs is a class with the single method encode(filename, format). After creating such a class and connecting it with the video conversion library, you’ll have your first facade.
 
-<!-- ![facade](/apps/asafarim-site/static/img/facade.svg) -->
-<div className="text-center">
- <form action="https://refactoring.guru/design-patterns/book" method="get" target="_blank">
-    <button type="submit" class="btn btn-danger active">Learn more about Façade →</button>
- </form>
- <br />
-</div>
+<a className="rm-a" href="https://refactoring.guru/design-patterns/book">Learn more about Façade</a>
+<br />
+<br />
+
 
 But what it can be seen as a downside to these kind of patterns is actually working with a broad set of objects that belong to a sophisticated library or framework. Ordinarily, you’d need to initialize all of those objects, keep track of dependencies, execute methods in the correct order, and so on, which makes it hard to comprehend and maintain.
 
