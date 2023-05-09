@@ -1,32 +1,35 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'ASAFARIM',
+  tagline: 'Scientific Applications',
+  url: 'https://asafarim.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'ASAFARIM-IT', // Usually your GitHub org/user name.
+  projectName: 'asafarim-site', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'ASAFARIM',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'ASAFARIM Logo',
+        src: 'img/logoT.svg',
       },
       items: [
         {
-          to: 'docs/',
+          to: 'docs/index',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: 'Topics',
           position: 'left',
         },
         { to: 'blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          href: 'https://github.com/AliSafari-IT/asafarim-site',
+          label: 'GitHub 📚',
           position: 'right',
+        },
+        {
+          to: '/eula', position: 'right', label: "EULA"
         },
       ],
     },
@@ -37,12 +40,17 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'All Topics',
+              to: 'docs/index',
+            }, {
+              label: 'End-User License Agreement',
+              to: '/eula',
+            }, {
+              label: 'Cookies policy',
+              to: '/cookies_en',
+            }, {
+              label: 'Website disclaimer',
+              to: '/disclaimers',
             },
           ],
         },
@@ -50,16 +58,16 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Stack Overflow 👷',
+              href: 'https://stackoverflow.com/users/10703628',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Discord 💥',
+              href: 'https://discord.com/invite/d5RzKjfwbe',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Twitter ✨',
+              href: 'https://twitter.com/asafarim',
             },
           ],
         },
@@ -67,17 +75,27 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
+              label: 'Blog 💡',
               to: 'blog',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'GitHub 📚',
+              href: 'https://github.com/AliSafari-IT/asafarim-site',
+            },
+            {
+              label: 'Buy me a coffee ☕',
+              href: 'https://www.buymeacoffee.com/asafarim',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © 2020-${new Date().getFullYear()} ASAFARIM, Inc.<br/>
+      Learning is an experience, everything else is just information. (Albert Einstein)`,
+    },
+    googleAnalytics: {
+      trackingID: 'G-5C5QXFF5ZX',
+      // Optional fields.
+      anonymizeIP: true, // Should IPs be anonymized?
     },
   },
   presets: [
@@ -88,18 +106,22 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/AliSafari-IT/asafarim-site/blob/main/apps/asafarim-site/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/AliSafari-IT/asafarim-site/blob/main/apps/asafarim-site/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
+  ],
+  stylesheets: [
+    'https://fonts.googleapis.com/css?family=Sen|Source+Code+Pro',
+    'https://at-ui.github.io/feather-font/css/iconfont.css'
   ],
 };

@@ -28,7 +28,11 @@
     <FolderPairs>
         <Pair>
             <Left>D:\AsafariM\nx-asafarim\dist\apps\asafarim-site</Left>
+<<<<<<< HEAD
             <Right>ftp://asafarim@asafarim.com/public_html|timeout=60|pass64=YjcwbVhoSzBUN2tbWTs=</Right>
+=======
+            <Right>ftp://asafarim@asafarim.com/public_html|timeout=30|pass64=YjcwbVhoSzBUN2tbWTs=</Right>
+>>>>>>> a754c196e74d5560a4dd64cb3ce352b3032c7a33
         </Pair>
     </FolderPairs>
     <Errors Ignore="false" Retry="0" Delay="5"/>
